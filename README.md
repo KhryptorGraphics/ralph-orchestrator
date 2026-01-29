@@ -56,12 +56,17 @@ For simpler tasks, skip planning and run directly:
 ralph run -p "Add input validation to the /users endpoint"
 ```
 
-## Web Dashboard
+## Web Dashboard (Alpha)
+
+> **Alpha:** The web dashboard is under active development. Expect rough edges and breaking changes.
 
 Ralph includes a web dashboard for monitoring and managing orchestration loops.
 
 ```bash
-ralph web
+ralph web                              # starts both servers + opens browser
+ralph web --no-open                    # skip browser auto-open
+ralph web --backend-port 4000          # custom backend port
+ralph web --frontend-port 8080         # custom frontend port
 ```
 
 **Requirements:** Node.js >= 18 and npm. On first run, `ralph web` will auto-detect missing `node_modules` and run `npm install` for you.
