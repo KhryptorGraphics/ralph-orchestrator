@@ -101,7 +101,7 @@ thiserror = "2"
 anyhow = "1"
 
 # OS keychain for secure credential storage
-keyring = { version = "3", features = ["apple-native", "sync-secret-service"] }
+keyring = { version = "3", features = ["apple-native", "linux-native"] }
 
 # Logging/tracing
 tracing = "0.1"
